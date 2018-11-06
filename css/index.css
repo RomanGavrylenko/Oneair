@@ -193,7 +193,7 @@ h4 {
 	top: 0;
 	left: 0;
 	right: 0;
-	background : url("01.jpg");
+	background : url('../01.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -411,7 +411,7 @@ h4 {
 }
 
 .service-after {
-	background-image: url('img/1920x1080/02.jpg');
+	background-image: url('../img/1920x1080/02.jpg');
 	height: 400px;
 	background-repeat: no-repeat;
 	background-size: cover;

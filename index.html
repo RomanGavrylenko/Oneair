@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="magnific-popup.css">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 	<header class="header">
@@ -55,7 +55,7 @@
 						<a class="img-section-text-button mx-auto" onclick='showVideo()';><i class="fas fa-play"></i>watch intro video</a>
 						<div class="show-video-wrap" id='show-video-wrap' >
 							<span class="show-video-close" onclick="closeVideo()">&#x2716;</span>
-							<video class="show-video" id="show-video" src="mov_bbb.mp4" controls></video>
+							<video class="show-video" id="show-video" src="video/mov_bbb.mp4" controls></video>
 						</div>
 					</div>
 				</div> <!--End row -->
@@ -390,108 +390,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="magnific-popup.min.js"></script>
-    <script src="index.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/index.js"></script>
 
 
-    <script type="text/javascript">
-    	/*MASONRY*/
-    	$(document).ready(function() {
-    		$('.work-grid').masonry({
-  				itemSelector: '.work-grid-item',
-  				columnWidth: '.work-grid-item',
-				fitWidth: true,
-				gutter:5,
-				
-			});
+   
 
-			/*$(window).resize(function () {
-    			$container.masonry('bindResize')
-			});*/
-		});
-
-    </script>
-    <script type="text/javascript">
-    	/*HEADER*/
-    	$(document).ready(function(){
-			$(window).scroll(function() {
-    			if ($(document).scrollTop() > 0) {
-					$('.header').css('background','#fff').css('transition','all 1s ease');
-					$('.header_logo_white').css('display', 'none').css('transition','all 1s ease');
-					$('.header_logo_black').css('display','inline-block').css('transition','all 1s ease');
-					$('.header-nav-link').css('color', '#515769').css('transition','all 1s ease');
- 				} else {
- 					$('.header').css('background','rgba(255,255,255, 0)');
-					$('.header_logo_white').css('display', 'inline-block');
-					$('.header_logo_black').css('display','none');
-					$('.header-nav-link').css('color', '#fff');
- 				}
-
- 				if($(window).width()<= 576) {
- 					$('.header').css('background','rgba(255,255,255, 1)');
-					$('.header_logo_white').css('display', 'none');
-					$('.header_logo_black').css('display','inline-block');
-					$('.header-nav-link').css('color', '#565C6E');
- 					
- 				}
-
- 				if (($(window).width()> 576) && ($(window).width()<768) ) {
-					$('.header_logo_white').css('display', 'none');
-					$('.header_logo_black').css('display','inline-block');
-					$('.header-nav-link').css('color', '#565C6E');
- 					
- 				}
-			});
-   		 });
-
-    	
-
-		
-    </script>
-
-    <script type="text/javascript">
-
-    	$(document).ready(function(){
-    		$('.work-grid-item-link').magnificPopup({
-    			type:'inline',
-    			closeOnBgClick: false,
-    			enableEscapeKey: false,
-    			
-    		})
-    	});
-    </script>
-
-     <script>
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: 48.4556011, lng: 35.0522975};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 10, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-    </script>
+     
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbQ5s-iTZMEQ62d9wS50_ajUtdy6NdlWk&callback=initMap">
     </script>
 
-    <script type="text/javascript">
-    	$(document).ready(function(){
-    		$('.header-nav-icon').click(function(){
-    			
-    			/*$('.header-nav').toggleClass('dropdown')*/
-    			if ($('.header-nav').css('display') == 'none') {
-    				$('.header-nav').css('display', 'block');
-    				$('.header-nav-li').css('display', 'block');
-    				
-    			} else {$('.header-nav').css('display', 'none');
-    				$('.header-nav-li').css('display', 'inline-block');
-    			}
-    		});
-    	});
-    </script>
+   
 
 
  
